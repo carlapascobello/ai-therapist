@@ -1,3 +1,82 @@
-body {
-  background: darkgreen;
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.upper-lelft {
+  line-height: 1.7;
+}
+
+.upper-right {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.search-suggestions-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 320px auto 220px;
+}
+
+.options {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  background: white;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 120px;
+}
+
+form {
+  text-align: center;
+}
+
+.search-box {
+  width: 600px;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  color: #4f4f4f;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper {
+  display: inline-block;
+  background-color: #f4f4f4;
+  border-radius: 50px;
+}
+
+input,
+.submit-button {
+  background-color: transparent;
+  border: 0;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50px;
+}
+
+.submit-button {
+  font-size: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
