@@ -4,11 +4,15 @@ body {
 }
 
 header {
-  display: flex;
   justify-content: space-between;
   font-size: 18px;
   font-weight: 600;
-  margin-top: 10px;
+  /* to fix the position */
+  display: flex;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
 }
 
 .upper-left {
@@ -70,7 +74,7 @@ form {
   outline: none;
 }
 
-footer {
+.footer {
   text-align: center;
   padding-top: 5px;
   font-size: 14px;
@@ -102,4 +106,20 @@ input,
   position: relative;
   right: 8px;
   font-weight: 500;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.conversation-box {
+  margin: 275px auto 245px;
+}
+
+footer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 20%; /* Negative half of height. */
+  margin-left: -25%; /* Negative half of width. */
 }
