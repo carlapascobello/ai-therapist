@@ -137,3 +137,10 @@ footer {
   background: #f4f4f4;
   padding: 10px 25px;
 }
+
+.athena-answer {
+  position: absolute;
+  left: 350px;
+  width: 700px;
+  margin-top: 10px;
+}
