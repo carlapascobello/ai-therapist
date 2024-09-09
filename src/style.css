@@ -23,10 +23,10 @@ header {
 .upper-right {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   text-align: center;
-  line-height: 1.7;
+  line-height: 2;
   margin-right: 10px;
 }
 
@@ -34,7 +34,7 @@ header {
   padding: 0;
   display: flex;
   justify-content: center;
-  margin: 275px auto 245px;
+  margin: 250px 150px 245px 150px;
 }
 
 .options {
@@ -128,17 +128,18 @@ footer {
 }
 
 #conversation-box {
-  margin: 100px 200px 10px 200px;
+  margin: 30px 50px 20px 50px;
 }
 
 #ai-reply {
-  margin: 0 200px;
+  margin: 0 50px;
+  line-height: 1.5;
 }
 
 .user-reply {
   position: absolute;
   right: 0;
-  margin-right: 380px;
+  margin: 10px;
   border: none;
   border-radius: 15px;
   background: #f4f4f4;
@@ -154,4 +155,24 @@ footer {
 
 .conversation-div {
   padding: 10px 0;
+}
+
+/*.convo-container {
+  position: sticky;
+  border: 1px solid #f4f4f4;
+  max-width: 1000px;
+  max-height: 800px;
+  margin: 60px auto;
+}
+  */
+
+.borders {
+  position: fixed;
+  left: 210px;
+  top: 100px;
+  border: 1px solid #f4f4f4;
+  background-color: transparent;
+  max-width: 1000px;
+  max-height: 620px;
+  /* margin: 100px auto 50px auto;*/
 }

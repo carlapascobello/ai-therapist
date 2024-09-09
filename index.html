@@ -10,47 +10,59 @@
     <title>AI Therapist</title>
   </head>
   <body>
-    <header>
-      <span class="upper-left"
-        >Hi! <br /><strong>I am Athena.</strong> <br />Your AI therapist.
-      </span>
-      <span class="upper-right">A</span>
-    </header>
-    <main>
-      <div id="convo-container">
-        <div id="conversation-box"></div>
-        <div id="ai-reply"></div>
-        <div class="search-suggestions-container" id="options">
-          <button class="options 1">Create a Renaissance-style painting</button>
-          <button class="options 1">Text inviting neighbors to barbecue</button>
-          <button class="options 3">Pick outfit to look good on camera</button>
-          <button class="options 4">Fun fact about the Roman Empire</button>
-        </div>
-      </div>
-
-      <footer>
-        <form action="" id="advice-input-form">
-          <div class="wrapper">
-            <input
-              type="text"
-              name=""
-              class="search-box"
-              id="advice-input"
-              placeholder="Message Athena AI"
-              required
-              autocomplete="off"
-              autofocus
-            />
-            <button type="submit" id="submit-button" class="submit-button">
-              ⌃
+    <div class="borders">
+      <header>
+        <span class="upper-left"
+          >Hi! <br /><strong>I am Athena.</strong> <br />Your AI therapist.
+        </span>
+        <span class="upper-right">10</span>
+      </header>
+      <main>
+        <div class="convo-container">
+          <div id="conversation-box"></div>
+          <div id="ai-reply"></div>
+          <div class="search-suggestions-container" id="options">
+            <button
+              class="options 1"
+              id="option-1"
+              value="I am lost in all aspects of my life. What can I do today?"
+            >
+              I am lost in all aspects of my life. What can I do today?
             </button>
+            <button class="options 2">
+              Text inviting neighbors to barbecue
+            </button>
+            <button class="options 3">
+              Pick outfit to look good on camera
+            </button>
+            <button class="options 4">Fun fact about the Roman Empire</button>
           </div>
-        </form>
-        <div class="footer">
-          Athena AI can make mistakes. Check important info.
         </div>
-      </footer>
-    </main>
+
+        <footer>
+          <form action="" id="advice-input-form">
+            <div class="wrapper">
+              <input
+                type="text"
+                name=""
+                class="search-box"
+                id="advice-input"
+                placeholder="Message Athena AI"
+                required
+                autocomplete="off"
+                autofocus
+              />
+              <button type="submit" id="submit-button" class="submit-button">
+                ⌃
+              </button>
+            </div>
+          </form>
+          <div class="footer">
+            Athena AI can make mistakes. Check important info.
+          </div>
+        </footer>
+      </main>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
