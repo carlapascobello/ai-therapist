@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <!-- typlewriter plugin -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Therapist</title>
   </head>
@@ -16,8 +17,10 @@
       <span class="upper-right">A</span>
     </header>
     <main>
-      <div id="conversation-box">
-        <div class="search-suggestions-container">
+      <div id="convo-container">
+        <div id="conversation-box"></div>
+        <div id="ai-reply"></div>
+        <div class="search-suggestions-container" id="options">
           <button class="options 1">Create a Renaissance-style painting</button>
           <button class="options 1">Text inviting neighbors to barbecue</button>
           <button class="options 3">Pick outfit to look good on camera</button>
@@ -33,104 +36,21 @@
               name=""
               class="search-box"
               id="advice-input"
-              placeholder="Message ChatGPT"
+              placeholder="Message Athena AI"
               required
               autocomplete="off"
+              autofocus
             />
-            <button
-              type="submit"
-              class="submit-button"
-              onclick="submitPrompt()"
-            >
+            <button type="submit" id="submit-button" class="submit-button">
               ⌃
             </button>
           </div>
         </form>
         <div class="footer">
-          ChatGPT can make mistakes. Check important info.
+          Athena AI can make mistakes. Check important info.
         </div>
       </footer>
     </main>
     <script src="src/index.js"></script>
   </body>
 </html>
-
-<!--
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat Prompt</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-      .chat-box {
-        width: 300px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        margin: 0 auto;
-        margin-top: 20px;
-      }
-      .chat-input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      .submit-btn {
-        width: 100%;
-        padding: 10px;
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-      }
-      .chat-output {
-        margin-top: 20px;
-        border-top: 1px solid #ccc;
-        padding-top: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="chat-box">
-      <input
-        type="text"
-        id="promptInput"
-        class="chat-input"
-        placeholder="Type your message..."
-      />
-      <button class="submit-btn" onclick="submitPrompt()">Submit</button>
-
-      <div id="output" class="chat-output"></div>
-    </div>
-
-    <script>
-      function submitPrompt() {
-        // Get the input box and its value
-        let promptInput = document.getElementById("promptInput");
-        let userPrompt = promptInput.value;
-
-        // Display the prompt in the output area (could be replaced by API interaction)
-        let outputDiv = document.getElementById("output");
-        outputDiv.innerHTML +=
-          "<p><strong>You:</strong> " + userPrompt + "</p>";
-
-        // Optionally, add a simulated response
-        setTimeout(() => {
-          outputDiv.innerHTML +=
-            "<p><strong>Bot:</strong> This is a response to your prompt!</p>";
-        }, 1000); // Delay for realism
-
-        // Clear the input box
-        promptInput.value = "";
-      }
-    </script>
-  </body>
-</html>
-
--->

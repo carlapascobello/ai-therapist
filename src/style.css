@@ -120,12 +120,19 @@ footer {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: 20%; /* Negative half of height. */
-  margin-left: -25%; /* Negative half of width. */
+  /* margin-top: 20%; /* Negative half of height. */
+  /*margin-left: -25%; /* Negative half of width. */
+  background-color: #fff;
+  margin-top: 20%;
+  margin-left: -25%;
 }
 
 #conversation-box {
-  margin: 100px;
+  margin: 100px 200px 10px 200px;
+}
+
+#ai-reply {
+  margin: 0 200px;
 }
 
 .user-reply {
@@ -143,4 +150,8 @@ footer {
   left: 350px;
   width: 700px;
   margin-top: 10px;
+}
+
+.conversation-div {
+  padding: 10px 0;
 }
