@@ -102,18 +102,17 @@ input,
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  border: none;
   position: relative;
   right: 8px;
   font-weight: 500;
 }
 
-.hidden {
-  opacity: 0;
+.submit-button:hover {
+  cursor: pointer;
 }
 
-.conversation-box {
-  margin: 275px auto 245px;
+.hidden {
+  opacity: 0;
 }
 
 footer {
@@ -136,6 +135,24 @@ footer {
   line-height: 1.5;
 }
 
+.convo-container {
+  padding: 10px 0;
+  border: 1px solid #f4f4f4;
+  border-bottom: none;
+  background-color: transparent;
+  max-width: 1000px;
+  height: 100%;
+}
+
+/*
+.convo-container {
+  position: sticky;
+  border: 1px solid #f4f4f4;
+  max-width: 1000px;
+  max-height: 800px;
+  margin: 60px auto;
+}
+
 .user-reply {
   position: absolute;
   right: 0;
@@ -146,31 +163,13 @@ footer {
   padding: 10px 25px;
 }
 
-.athena-answer {
-  position: absolute;
-  left: 350px;
-  width: 700px;
-  margin-top: 10px;
-}
-
-.conversation-div {
-  padding: 10px 0;
-}
-
-/*.convo-container {
-  position: sticky;
-  border: 1px solid #f4f4f4;
-  max-width: 1000px;
-  max-height: 800px;
-  margin: 60px auto;
-}
-  */
+*/
 
 .borders {
-  position: fixed;
+  position: relative;
   left: 210px;
   top: 100px;
-  border: 1px solid #f4f4f4;
+  border: none; /* 1px solid #f4f4f4; */
   background-color: transparent;
   max-width: 1000px;
   max-height: 620px;

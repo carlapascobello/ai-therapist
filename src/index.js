@@ -59,7 +59,6 @@ function displayOptionOutput(response) {
 
 function getOptionsInput(event) {
   event.preventDefault();
-  console.log("hello input");
 
   let optionsElement = document.querySelector("#options");
   optionsElement.classList.add("hidden");
