@@ -52,13 +52,14 @@ function displayOptionOutput(response) {
   new Typewriter("#ai-reply", {
     strings: `${conversationBox}`,
     autoStart: true,
-    delay: 0.1,
+    delay: 0.5,
     cursor: "",
   });
 }
 
 function getOptionsInput(event) {
   event.preventDefault();
+  console.log("hello input");
 
   let optionsElement = document.querySelector("#options");
   optionsElement.classList.add("hidden");
